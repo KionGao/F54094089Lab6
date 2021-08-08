@@ -39,10 +39,10 @@ class Tower:
 
     @classmethod
     def RapidTest(cls, x, y):
-        rapid_test = cls(x, y, SingleAttack(),  RapidTest_IMAGE)
+        rapid_test = cls(x, y, SingleAttack(), ALCOHOL_IMAGE)
         rapid_test._range = [130, 140, 150, 160, 170, 180]
         rapid_test._damage = [2.0, 2.1, 2.2, 2.3, 2.4, 2.5]
-        return rapid_test
+        return cls(x, y, SingleAttack(), RAPID_TEST_IMAGE)
 
     @classmethod
     def Alcohol(cls, x, y):
@@ -60,11 +60,6 @@ class Tower:
         :param y: center y
         :return: object
         """
-    def PCR(cls, x, y):
-        pcr = cls(x, y, SingleAttack(), PCR_IMAGE)
-        pcr._range = [100, 105, 110, 115, 120, 125]
-        pcr._damage = [1.0, 1.1, 1.2, 1.3, 1.4, 1.5]
-        return pcr
         pass
 
     def attack(self, enemy_group):

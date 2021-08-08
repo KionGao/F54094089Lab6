@@ -55,10 +55,6 @@ class BuildMenu(Menu):
         """
         (Q1) button name: (1) rapid test (2) alcohol (3) pcr
         """
-        self._buttons = [Button(ALCOHOL_BTN_IMAGE, "alcohol", self.rect.centerx, self.rect.centery - 70),
-                         Button(RAPID_TEST_BTN_IMAGE, "rapid test", self.rect.centerx, self.rect.centery + 75),
-                         Button(PCR_BTN_IMAGE, "pcr", self.rect.centerx - 65, self.rect.centery + 10),
-                         ]
         pass
 
 
